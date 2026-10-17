@@ -60,7 +60,7 @@ export const LogoStudioModal: React.FC<LogoStudioModalProps> = ({ isOpen, onClos
         {/* Header */}
         <div className="flex items-center justify-between border-b border-emerald-950 pb-4">
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-emerald-950 rounded-lg border border-emerald-800 text-[#e5c158]">
+            <div className="p-2 bg-emerald-950 rounded-lg border border-emerald-800 text-emerald-400">
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
@@ -144,11 +144,11 @@ export const LogoStudioModal: React.FC<LogoStudioModalProps> = ({ isOpen, onClos
             onClick={handleDownloadSVG}
             className="flex items-center justify-center gap-2 py-2.5 px-4 bg-emerald-950 hover:bg-emerald-900 border border-emerald-800 text-emerald-300 rounded-lg text-xs font-semibold cursor-pointer transition-colors"
           >
-            <Download className="w-4 h-4 text-[#e5c158]" />
+            <Download className="w-4 h-4 text-emerald-400" />
             <span>Download Transparent SVG</span>
           </button>
 
-          <label className="flex items-center justify-center gap-2 py-2.5 px-4 bg-[#e5c158] hover:bg-[#f6d26b] text-slate-950 rounded-lg text-xs font-semibold cursor-pointer transition-colors">
+          <label className="flex items-center justify-center gap-2 py-2.5 px-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold cursor-pointer transition-colors">
             <Upload className="w-4 h-4" />
             <span>Replace with Local PNG/SVG</span>
             <input

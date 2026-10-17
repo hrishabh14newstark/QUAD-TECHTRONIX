@@ -10,7 +10,7 @@ export const TapeoutRoadmap: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 text-xs font-mono text-emerald-700 dark:text-emerald-400 mb-3 font-semibold">
-            <GitCommit className="w-4 h-4 text-[#b48c26] dark:text-[#e5c158]" />
+            <GitCommit className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <span>Design-to-Silicon Engineering Lifecycle</span>
             <span aria-hidden="true">·</span>
             <span>RTL-to-GDSII Execution Flow</span>
@@ -34,7 +34,7 @@ export const TapeoutRoadmap: React.FC = () => {
             >
               <div>
                 <div className="flex items-center justify-between text-xs font-mono mb-4">
-                  <span className="text-xl font-extrabold text-[#b48c26] dark:text-[#e5c158] font-mono">
+                  <span className="text-xl font-extrabold text-black dark:text-white font-mono">
                     {milestone.step}
                   </span>
                   <div className="flex items-center gap-2">
@@ -44,7 +44,7 @@ export const TapeoutRoadmap: React.FC = () => {
                         milestone.status === 'Completed'
                           ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 border border-emerald-300 dark:border-emerald-800'
                           : milestone.status === 'In Progress'
-                          ? 'bg-amber-100 dark:bg-amber-950 text-amber-900 dark:text-[#e5c158] border border-amber-300 dark:border-amber-800'
+                          ? 'bg-emerald-600 text-white dark:bg-emerald-600 dark:text-white border border-emerald-700'
                           : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-300 dark:border-slate-800'
                       }`}
                     >

@@ -104,12 +104,12 @@ export const QuadLogo: React.FC<QuadLogoProps> = ({
                 <stop offset="100%" stopColor="#082515" />
               </linearGradient>
 
-              {/* Gold Conductive Trace Gradient */}
+              {/* Green Conductive Trace Gradient */}
               <linearGradient id="goldTrace" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="#fae79d" />
-                <stop offset="35%" stopColor="#e5c158" />
-                <stop offset="75%" stopColor="#c5992e" />
-                <stop offset="100%" stopColor="#fcedb4" />
+                <stop offset="0%" stopColor="#34d399" />
+                <stop offset="35%" stopColor="#10b981" />
+                <stop offset="75%" stopColor="#059669" />
+                <stop offset="100%" stopColor="#6ee7b7" />
               </linearGradient>
 
               {/* Rim Highlight Gradient */}
@@ -119,7 +119,7 @@ export const QuadLogo: React.FC<QuadLogoProps> = ({
               </linearGradient>
 
               <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow dx="0" dy="0" stdDeviation="1" floodColor="#f6d26b" floodOpacity="0.5" />
+                <feDropShadow dx="0" dy="0" stdDeviation="1" floodColor="#10b981" floodOpacity="0.5" />
               </filter>
             </defs>
 
@@ -309,7 +309,7 @@ export const QuadLogo: React.FC<QuadLogoProps> = ({
             </g>
 
             {/* Central Precision Contact Ring */}
-            <circle cx="100" cy="100" r="4" fill="#e5c158" filter="url(#goldGlow)" />
+            <circle cx="100" cy="100" r="4" fill="#10b981" filter="url(#goldGlow)" />
             <circle cx="100" cy="100" r="1.8" fill="#082515" />
           </svg>
         )}
@@ -317,10 +317,10 @@ export const QuadLogo: React.FC<QuadLogoProps> = ({
 
       {showText && (
         <div className="flex flex-col">
-          <span className={`font-bold tracking-tight text-slate-900 dark:text-white ${current.text} leading-none`}>
-            QUAD <span className="text-[#caa23d] dark:text-[#e5c158]">TECHTRONIX</span>
+          <span className={`font-bold tracking-tight text-black dark:text-white ${current.text} leading-none`}>
+            QUAD <span className="text-emerald-600 dark:text-emerald-400">TECHTRONIX</span>
           </span>
-          <span className="text-[10px] tracking-wider uppercase text-emerald-600 dark:text-emerald-400 font-semibold mt-1 font-mono">
+          <span className="text-[10px] tracking-wider uppercase text-emerald-700 dark:text-emerald-400 font-semibold mt-1 font-mono">
             BY QUAD ENGINEERS
           </span>
         </div>

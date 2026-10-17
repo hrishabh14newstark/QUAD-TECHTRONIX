@@ -55,22 +55,22 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               className="flex flex-col focus:outline-none"
             >
-              <span className="font-extrabold text-lg tracking-tight text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
-                QUAD <span className="text-[#caa23d] dark:text-[#e5c158]">TECHTRONIX</span>
+              <span className="font-extrabold text-lg tracking-tight text-black dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                QUAD <span className="text-emerald-600 dark:text-emerald-400">TECHTRONIX</span>
               </span>
-              <span className="text-[9px] uppercase tracking-widest text-emerald-600 dark:text-emerald-400/80 font-mono font-semibold">
+              <span className="text-[9px] uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-mono font-semibold">
                 BY QUAD ENGINEERS
               </span>
             </a>
           </div>
 
           {/* Zone 2: 4-5 concise single-line nav links */}
-          <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600 dark:text-slate-300">
+          <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-neutral-700 dark:text-neutral-300">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className="whitespace-nowrap shrink-0 transition-colors hover:text-emerald-600 dark:hover:text-[#e5c158] focus:outline-none text-slate-600 dark:text-slate-300"
+                className="whitespace-nowrap shrink-0 transition-colors hover:text-emerald-600 dark:hover:text-emerald-400 focus:outline-none text-neutral-700 dark:text-neutral-300 font-medium cursor-pointer"
               >
                 {item.label}
               </button>
@@ -84,16 +84,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 type="button"
                 onClick={onToggleTheme}
                 title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-                className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-emerald-950/40 border border-slate-200 dark:border-emerald-950 transition-colors cursor-pointer"
+                className="p-2 rounded-lg text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 transition-colors cursor-pointer"
                 aria-label="Toggle theme mode"
               >
-                {isDarkMode ? <Sun className="w-4 h-4 text-[#e5c158]" /> : <Moon className="w-4 h-4 text-slate-700" />}
+                {isDarkMode ? <Sun className="w-4 h-4 text-emerald-400" /> : <Moon className="w-4 h-4 text-neutral-800" />}
               </button>
             )}
 
             <button
               onClick={onOpenProposal}
-              className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-slate-900 bg-[#e5c158] hover:bg-[#f6d26b] transition-all rounded-md shadow-sm whitespace-nowrap shrink-0 cursor-pointer focus:ring-2 focus:ring-[#e5c158]/50"
+              className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-black hover:bg-neutral-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 transition-all rounded-md shadow-sm whitespace-nowrap shrink-0 cursor-pointer focus:ring-2 focus:ring-emerald-500/50"
             >
               <span>Build Proposal</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -106,15 +106,15 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 type="button"
                 onClick={onToggleTheme}
-                className="p-2 rounded-md text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-emerald-950/40"
+                className="p-2 rounded-md text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-900"
               >
-                {isDarkMode ? <Sun className="w-5 h-5 text-[#e5c158]" /> : <Moon className="w-5 h-5" />}
+                {isDarkMode ? <Sun className="w-5 h-5 text-emerald-400" /> : <Moon className="w-5 h-5" />}
               </button>
             )}
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-emerald-950/40 focus:outline-none"
+              className="p-2 rounded-md text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-900 focus:outline-none"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -126,25 +126,25 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white dark:bg-[#0a0f0d] border-b border-slate-200 dark:border-emerald-950/80 px-4 pt-3 pb-6 space-y-3">
+        <div className="lg:hidden bg-white dark:bg-[#030604] border-b border-neutral-200 dark:border-neutral-800 px-4 pt-3 pb-6 space-y-3">
           <div className="flex flex-col space-y-2">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className="text-left py-2 px-3 rounded text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-emerald-950/30 hover:text-emerald-600 dark:hover:text-[#e5c158]"
+                className="text-left py-2 px-3 rounded text-sm font-medium text-neutral-700 dark:text-neutral-200 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors"
               >
                 {item.label}
               </button>
             ))}
           </div>
-          <div className="pt-2 border-t border-slate-200 dark:border-emerald-950/60">
+          <div className="pt-2 border-t border-neutral-100 dark:border-neutral-800">
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onOpenProposal();
               }}
-              className="w-full py-2.5 px-4 text-center text-xs font-semibold text-slate-900 bg-[#e5c158] rounded-md"
+              className="w-full py-2.5 px-4 text-center text-xs font-semibold text-white bg-black hover:bg-neutral-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 rounded-md cursor-pointer"
             >
               Build Semicon 2.0 Proposal
             </button>

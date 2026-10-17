@@ -80,7 +80,7 @@ Quad Techtronix · Deep-Tech Semiconductor Innovator
         <div className="flex items-center justify-between border-b border-emerald-950 pb-4">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-emerald-950 rounded-lg border border-emerald-800">
-              <FileText className="w-5 h-5 text-[#e5c158]" />
+              <FileText className="w-5 h-5 text-emerald-400" />
             </div>
             <div>
               <h2 className="text-xl font-bold text-white">
@@ -191,14 +191,14 @@ Quad Techtronix · Deep-Tech Semiconductor Innovator
                 type="number"
                 value={proposalData.pDliRequestedCr}
                 onChange={(e) => setProposalData({ ...proposalData, pDliRequestedCr: e.target.value })}
-                className="w-full py-2 px-2 bg-[#060c09] border border-emerald-950 rounded-lg text-[#e5c158] font-mono text-center font-bold"
+                className="w-full py-2 px-2 bg-[#060c09] border border-emerald-950 rounded-lg text-emerald-400 font-mono text-center font-bold"
               />
             </div>
           </div>
 
           <div className="flex flex-col justify-end">
             <div className="p-2.5 bg-emerald-950/40 border border-emerald-900 rounded-lg text-[11px] text-slate-300">
-              Total Budget: <strong className="text-white font-mono">₹ {totalCostCr} Cr</strong> · Max P-DLI Seed: <strong className="text-[#e5c158] font-mono">₹ 15.00 Cr (50% cap)</strong>
+              Total Budget: <strong className="text-white font-mono">₹ {totalCostCr} Cr</strong> · Max P-DLI Seed: <strong className="text-emerald-400 font-mono">₹ 15.00 Cr (50% cap)</strong>
             </div>
           </div>
 
@@ -241,7 +241,7 @@ Quad Techtronix · Deep-Tech Semiconductor Innovator
           </div>
           <button
             onClick={onClose}
-            className="px-5 py-2 text-xs font-semibold text-slate-950 bg-[#e5c158] hover:bg-[#f6d26b] rounded-lg"
+            className="px-5 py-2 text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-500 rounded-lg cursor-pointer"
           >
             Done
           </button>

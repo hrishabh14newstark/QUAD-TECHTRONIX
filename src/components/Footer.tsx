@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenProposal }) =>
               <QuadLogo size="sm" glow={false} />
               <div className="flex flex-col">
                 <span className="font-bold text-base text-white tracking-tight">
-                  QUAD <span className="text-[#e5c158]">TECHTRONIX</span>
+                  QUAD <span className="text-emerald-400">TECHTRONIX</span>
                 </span>
                 <span className="text-[10px] text-emerald-400 font-mono">
                   BY QUAD ENGINEERS
@@ -51,7 +51,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenProposal }) =>
               <li>
                 <button
                   onClick={() => onNavigate('semicon-policy')}
-                  className="hover:text-[#e5c158] transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
                 >
                   Type 1: Design (Cat 01, 02, 03)
                 </button>
@@ -59,7 +59,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenProposal }) =>
               <li>
                 <button
                   onClick={() => onNavigate('semicon-policy')}
-                  className="hover:text-[#e5c158] transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
                 >
                   Type 2: R&D (Cat 04 Photonics & Chiplets)
                 </button>
@@ -67,7 +67,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenProposal }) =>
               <li>
                 <button
                   onClick={() => onNavigate('talent-ecosystem')}
-                  className="hover:text-[#e5c158] transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
                 >
                   Type 3: Talent Development (Cat 10)
                 </button>
@@ -75,7 +75,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenProposal }) =>
               <li>
                 <button
                   onClick={() => onNavigate('fiscal-calculator')}
-                  className="hover:text-[#e5c158] transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
                 >
                   P-DLI & 9% DLI Calculator
                 </button>
@@ -92,7 +92,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenProposal }) =>
               <li>
                 <button
                   onClick={() => onNavigate('silicon-portfolio')}
-                  className="hover:text-[#e5c158] transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
                 >
                   QT-Sovereign-1 (RV64GC + Crypto RoT)
                 </button>
@@ -100,7 +100,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenProposal }) =>
               <li>
                 <button
                   onClick={() => onNavigate('silicon-portfolio')}
-                  className="hover:text-[#e5c158] transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
                 >
                   QT-EdgePulse Neuromorphic NPU
                 </button>
@@ -108,7 +108,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenProposal }) =>
               <li>
                 <button
                   onClick={() => onNavigate('tapeout-flow')}
-                  className="hover:text-[#e5c158] transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors text-left text-slate-300 dark:text-slate-400 cursor-pointer"
                 >
                   60-Week MPW Tapeout Timeline
                 </button>
@@ -116,7 +116,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenProposal }) =>
               <li>
                 <button
                   onClick={onOpenProposal}
-                  className="text-[#e5c158] hover:underline transition-colors text-left font-medium cursor-pointer"
+                  className="text-emerald-400 hover:underline transition-colors text-left font-medium cursor-pointer"
                 >
                   Semicon 2.0 Proposal Dossier Generator →
                 </button>

@@ -24,7 +24,7 @@ export const ContactSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
-          <div className="flex items-center gap-2 text-xs font-mono text-[#b48c26] dark:text-[#e5c158] mb-3 font-semibold">
+          <div className="flex items-center gap-2 text-xs font-mono text-emerald-700 dark:text-emerald-400 mb-3 font-semibold">
             <Mail className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <span>Semicon 2.0 Inbound Portal</span>
             <span aria-hidden="true">·</span>
@@ -72,7 +72,7 @@ export const ContactSection: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2 bg-amber-100 dark:bg-emerald-950 rounded-lg border border-amber-300 dark:border-emerald-800 text-[#b48c26] dark:text-[#e5c158] shrink-0 mt-0.5">
+                  <div className="p-2 bg-emerald-100 dark:bg-emerald-950 rounded-lg border border-emerald-300 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400 shrink-0 mt-0.5">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                   <div>
@@ -107,7 +107,7 @@ export const ContactSection: React.FC = () => {
                 </p>
                 <button
                   onClick={() => setFormSubmitted(false)}
-                  className="px-5 py-2.5 text-xs font-semibold text-slate-950 bg-[#e5c158] hover:bg-[#f6d26b] rounded-lg cursor-pointer"
+                  className="px-5 py-2.5 text-xs font-semibold text-white bg-black hover:bg-neutral-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 rounded-lg cursor-pointer"
                 >
                   Send Another Inquiry
                 </button>
@@ -207,7 +207,7 @@ export const ContactSection: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full py-3 px-4 text-xs font-semibold text-slate-950 bg-[#e5c158] hover:bg-[#f6d26b] transition-all rounded-lg cursor-pointer"
+                  className="w-full py-3 px-4 text-xs font-semibold text-white bg-black hover:bg-neutral-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 transition-all rounded-lg cursor-pointer"
                 >
                   Send Official Consortium Request
                 </button>

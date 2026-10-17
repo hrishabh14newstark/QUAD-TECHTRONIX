@@ -26,8 +26,8 @@ export const TalentEcosystem: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
-          <div className="flex items-center gap-2 text-xs font-mono text-sky-700 dark:text-sky-400 mb-3 font-semibold">
-            <GraduationCap className="w-4 h-4 text-sky-600 dark:text-sky-400" />
+          <div className="flex items-center gap-2 text-xs font-mono text-emerald-700 dark:text-emerald-400 mb-3 font-semibold">
+            <GraduationCap className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <span>Type 3: Talent Development · Category 10</span>
             <span aria-hidden="true">·</span>
             <span>Semicon 2.0 Academic Synergies</span>
@@ -50,7 +50,7 @@ export const TalentEcosystem: React.FC = () => {
 
           <div className="max-w-3xl space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-950 border border-emerald-400 dark:border-emerald-600/50 flex items-center justify-center font-bold text-lg text-emerald-900 dark:text-[#e5c158] font-mono">
+              <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-950 border border-emerald-400 dark:border-emerald-600/50 flex items-center justify-center font-bold text-lg text-emerald-900 dark:text-emerald-300 font-mono">
                 ECE
               </div>
               <div>
@@ -63,14 +63,14 @@ export const TalentEcosystem: React.FC = () => {
               </div>
             </div>
 
-            <blockquote className="text-slate-700 dark:text-slate-200 text-sm sm:text-base italic leading-relaxed pl-4 border-l-2 border-[#caa23d] dark:border-[#e5c158]">
+            <blockquote className="text-slate-700 dark:text-slate-200 text-sm sm:text-base italic leading-relaxed pl-4 border-l-2 border-emerald-600 dark:border-emerald-400">
               "{FOUNDER_STORY.quote}"
             </blockquote>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
               {FOUNDER_STORY.corePillars.map((pillar, idx) => (
                 <div key={idx} className="p-3 bg-white dark:bg-[#060e0a]/80 rounded-lg border border-emerald-100 dark:border-emerald-950/80 shadow-xs">
-                  <span className="text-xs font-bold text-slate-900 dark:text-[#e5c158] block mb-1">
+                  <span className="text-xs font-bold text-slate-900 dark:text-emerald-400 block mb-1">
                     {pillar.title}
                   </span>
                   <p className="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -107,7 +107,7 @@ export const TalentEcosystem: React.FC = () => {
 
               <div className="p-5 rounded-xl bg-slate-50 dark:bg-[#09130e] border border-slate-200 dark:border-emerald-950 space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono">
-                  <span className="text-[#b48c26] dark:text-[#e5c158] font-semibold">PROGRAM 02</span>
+                  <span className="text-emerald-700 dark:text-emerald-400 font-semibold">PROGRAM 02</span>
                   <span className="text-slate-500 dark:text-slate-400">Undergraduate MPW Shuttles</span>
                 </div>
                 <h4 className="text-base font-bold text-slate-900 dark:text-white">
@@ -120,7 +120,7 @@ export const TalentEcosystem: React.FC = () => {
 
               <div className="p-5 rounded-xl bg-slate-50 dark:bg-[#09130e] border border-slate-200 dark:border-emerald-950 space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono">
-                  <span className="text-sky-700 dark:text-sky-400 font-semibold">PROGRAM 03</span>
+                  <span className="text-emerald-700 dark:text-emerald-400 font-semibold">PROGRAM 03</span>
                   <span className="text-slate-500 dark:text-slate-400">Nanofab Lab Apprenticeships</span>
                 </div>
                 <h4 className="text-base font-bold text-slate-900 dark:text-white">
@@ -136,7 +136,7 @@ export const TalentEcosystem: React.FC = () => {
           {/* Right: Interactive Student Fellowship Application Form */}
           <div className="lg:col-span-5 bg-white dark:bg-[#09120e] border border-slate-200 dark:border-emerald-900/60 rounded-2xl p-6 sm:p-8 shadow-sm">
             <div className="border-b border-slate-200 dark:border-emerald-950 pb-4 mb-5">
-              <span className="text-xs font-mono uppercase text-[#b48c26] dark:text-[#e5c158] font-bold tracking-wider block mb-1">
+              <span className="text-xs font-mono uppercase text-emerald-700 dark:text-emerald-400 font-bold tracking-wider block mb-1">
                 University Alliance
               </span>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white">
@@ -156,7 +156,7 @@ export const TalentEcosystem: React.FC = () => {
                 </p>
                 <button
                   onClick={() => setFellowshipSubmitted(false)}
-                  className="px-4 py-2 text-xs font-semibold text-slate-900 bg-[#e5c158] rounded-md hover:bg-[#f6d26b]"
+                  className="px-4 py-2 text-xs font-semibold text-white bg-black hover:bg-neutral-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 rounded-md cursor-pointer"
                 >
                   Submit Another Application
                 </button>
@@ -245,7 +245,7 @@ export const TalentEcosystem: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full py-2.5 px-4 text-xs font-semibold text-slate-950 bg-[#e5c158] hover:bg-[#f6d26b] transition-all rounded-lg cursor-pointer"
+                  className="w-full py-2.5 px-4 text-xs font-semibold text-white bg-black hover:bg-neutral-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 transition-all rounded-lg cursor-pointer"
                 >
                   Submit Fellowship Application
                 </button>

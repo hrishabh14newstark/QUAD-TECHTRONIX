@@ -93,7 +93,7 @@ export const FiscalCalculator: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 text-xs font-mono text-emerald-700 dark:text-emerald-400 mb-3 font-semibold">
-            <Calculator className="w-4 h-4 text-[#b48c26] dark:text-[#e5c158]" />
+            <Calculator className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <span>Interactive Policy Modeling Engine</span>
             <span aria-hidden="true">·</span>
             <span>Semicon 2.0 Fiscal Incentive Calculator</span>
@@ -109,13 +109,13 @@ export const FiscalCalculator: React.FC = () => {
         </div>
 
         {/* Tab Controls */}
-        <div className="flex flex-wrap gap-2 p-1.5 bg-white dark:bg-[#0a120e] rounded-xl border border-slate-200 dark:border-emerald-950 mb-8 max-w-2xl shadow-xs">
+        <div className="flex flex-wrap gap-2 p-1.5 bg-white dark:bg-[#070c09] rounded-xl border border-neutral-200 dark:border-neutral-800 mb-8 max-w-2xl shadow-xs">
           <button
             onClick={() => setCalcMode('PDLI')}
             className={`flex-1 min-w-[160px] py-2.5 px-4 text-xs font-semibold rounded-lg transition-all text-center cursor-pointer ${
               calcMode === 'PDLI'
-                ? 'bg-[#e5c158] text-slate-950 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                ? 'bg-black text-white dark:bg-emerald-600 dark:text-white shadow-xs'
+                : 'text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white'
             }`}
           >
             P-DLI & Seed (Cat 02)
@@ -124,8 +124,8 @@ export const FiscalCalculator: React.FC = () => {
             onClick={() => setCalcMode('DEPLOYMENT')}
             className={`flex-1 min-w-[160px] py-2.5 px-4 text-xs font-semibold rounded-lg transition-all text-center cursor-pointer ${
               calcMode === 'DEPLOYMENT'
-                ? 'bg-[#e5c158] text-slate-950 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                ? 'bg-black text-white dark:bg-emerald-600 dark:text-white shadow-xs'
+                : 'text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white'
             }`}
           >
             9% Deployment DLI (Cat 03)
@@ -134,8 +134,8 @@ export const FiscalCalculator: React.FC = () => {
             onClick={() => setCalcMode('RD_TALENT')}
             className={`flex-1 min-w-[160px] py-2.5 px-4 text-xs font-semibold rounded-lg transition-all text-center cursor-pointer ${
               calcMode === 'RD_TALENT'
-                ? 'bg-[#e5c158] text-slate-950 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                ? 'bg-black text-white dark:bg-emerald-600 dark:text-white shadow-xs'
+                : 'text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white'
             }`}
           >
             75% R&D / Talent (Cat 04 & 10)
@@ -153,10 +153,10 @@ export const FiscalCalculator: React.FC = () => {
               <div className="space-y-6">
                 <div>
                   <div className="flex items-center justify-between mb-2">
-                    <label className="text-sm font-medium text-slate-800 dark:text-white">
+                    <label className="text-sm font-medium text-neutral-800 dark:text-white">
                       Estimated Project Cost (Capex + Opex)
                     </label>
-                    <span className="text-sm font-bold font-mono text-[#b48c26] dark:text-[#e5c158] tabular-nums">
+                    <span className="text-sm font-bold font-mono text-emerald-700 dark:text-emerald-400 tabular-nums">
                       ₹ {projectCostCr} Crore
                     </span>
                   </div>
@@ -167,7 +167,7 @@ export const FiscalCalculator: React.FC = () => {
                     step={1}
                     value={projectCostCr}
                     onChange={(e) => setProjectCostCr(Number(e.target.value))}
-                    className="w-full accent-[#e5c158] h-2 bg-slate-200 dark:bg-emerald-950 rounded-lg cursor-pointer"
+                    className="w-full accent-emerald-600 dark:accent-emerald-400 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg cursor-pointer"
                   />
                   <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 block">
                     Rule: Advance seed funding covers up to 50% or ₹15 Crore, whichever is lower.
@@ -241,7 +241,7 @@ export const FiscalCalculator: React.FC = () => {
                     step={1}
                     value={exitYears}
                     onChange={(e) => setExitYears(Number(e.target.value))}
-                    className="w-full accent-[#e5c158] h-2 bg-slate-200 dark:bg-emerald-950 rounded-lg cursor-pointer"
+                    className="w-full accent-emerald-600 dark:accent-emerald-400 h-2 bg-slate-200 dark:bg-emerald-950 rounded-lg cursor-pointer"
                   />
                   <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 block">
                     Exit multiplier: 1.5x within 4 years; 2.0x if royalty financing beyond 4 years.
@@ -258,7 +258,7 @@ export const FiscalCalculator: React.FC = () => {
                     <label className="text-sm font-medium text-slate-800 dark:text-white">
                       Number of Eligible First-Time Products
                     </label>
-                    <span className="text-sm font-bold font-mono text-[#b48c26] dark:text-[#e5c158] tabular-nums">
+                    <span className="text-sm font-bold font-mono text-emerald-700 dark:text-emerald-400 tabular-nums">
                       {productCount} Products
                     </span>
                   </div>
@@ -269,7 +269,7 @@ export const FiscalCalculator: React.FC = () => {
                     step={1}
                     value={productCount}
                     onChange={(e) => setProductCount(Number(e.target.value))}
-                    className="w-full accent-[#e5c158] h-2 bg-slate-200 dark:bg-emerald-950 rounded-lg cursor-pointer"
+                    className="w-full accent-emerald-600 dark:accent-emerald-400 h-2 bg-slate-200 dark:bg-emerald-950 rounded-lg cursor-pointer"
                   />
                   <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 block">
                     Ceiling: ₹30 Cr per application; ₹120 Cr aggregate per company.
@@ -338,7 +338,7 @@ export const FiscalCalculator: React.FC = () => {
                     <label className="text-sm font-medium text-slate-800 dark:text-white">
                       Eligible Operational Expenditure (Opex)
                     </label>
-                    <span className="text-sm font-bold font-mono text-[#b48c26] dark:text-[#e5c158] tabular-nums">
+                    <span className="text-sm font-bold font-mono text-emerald-700 dark:text-emerald-400 tabular-nums">
                       ₹ {opexCr} Crore
                     </span>
                   </div>
@@ -349,7 +349,7 @@ export const FiscalCalculator: React.FC = () => {
                     step={1}
                     value={opexCr}
                     onChange={(e) => setOpexCr(Number(e.target.value))}
-                    className="w-full accent-[#e5c158] h-2 bg-slate-200 dark:bg-emerald-950 rounded-lg cursor-pointer"
+                    className="w-full accent-emerald-600 dark:accent-emerald-400 h-2 bg-slate-200 dark:bg-emerald-950 rounded-lg cursor-pointer"
                   />
                   <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 block">
                     Tapeout shuttle costs, engineer stipends, training manpower.
@@ -361,7 +361,7 @@ export const FiscalCalculator: React.FC = () => {
                     <label className="text-sm font-medium text-slate-800 dark:text-white">
                       State Government Incentive Share
                     </label>
-                    <span className="text-sm font-bold font-mono text-sky-700 dark:text-sky-400 tabular-nums">
+                    <span className="text-sm font-bold font-mono text-emerald-700 dark:text-emerald-400 tabular-nums">
                       {stateIncentivePercentage}% (Total Cap: 75%)
                     </span>
                   </div>
@@ -372,7 +372,7 @@ export const FiscalCalculator: React.FC = () => {
                     step={5}
                     value={stateIncentivePercentage}
                     onChange={(e) => setStateIncentivePercentage(Number(e.target.value))}
-                    className="w-full accent-sky-500 h-2 bg-slate-200 dark:bg-emerald-950 rounded-lg cursor-pointer"
+                    className="w-full accent-emerald-600 dark:accent-emerald-400 h-2 bg-slate-200 dark:bg-emerald-950 rounded-lg cursor-pointer"
                   />
                   <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 block">
                     Combined Central + State support caps at 75% of Project Cost.
@@ -390,7 +390,7 @@ export const FiscalCalculator: React.FC = () => {
               <span className="text-xs font-mono uppercase text-emerald-700 dark:text-emerald-400 font-semibold tracking-wider">
                 Financial Simulation Output
               </span>
-              <span className="text-xs font-mono text-[#b48c26] dark:text-[#e5c158] bg-amber-50 dark:bg-[#e5c158]/10 px-2 py-0.5 rounded border border-amber-200 dark:border-[#e5c158]/30 font-bold">
+              <span className="text-xs font-mono text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-300 dark:border-emerald-800 font-bold">
                 Verified Formula
               </span>
             </div>
@@ -400,7 +400,7 @@ export const FiscalCalculator: React.FC = () => {
               <div className="space-y-4">
                 <div className="p-4 bg-slate-50 dark:bg-[#08120d] rounded-xl border border-slate-200 dark:border-emerald-950">
                   <div className="text-xs text-slate-500 dark:text-slate-400 mb-1">Eligible P-DLI Milestone Advance Seed</div>
-                  <div className="text-3xl font-extrabold text-[#b48c26] dark:text-[#e5c158] font-mono tabular-nums">
+                  <div className="text-3xl font-extrabold text-black dark:text-white font-mono tabular-nums">
                     ₹ {pdliResults.eligibleSeedCr.toFixed(2)} Crore
                   </div>
                   <div className="text-xs text-emerald-700 dark:text-emerald-400/90 mt-1 font-medium">
@@ -434,7 +434,7 @@ export const FiscalCalculator: React.FC = () => {
                   </div>
                   <div className="flex justify-between border-t border-slate-200 dark:border-emerald-950/80 pt-2 text-slate-600 dark:text-slate-400">
                     <span>Exit Buyout Obligation ({exitYears} yrs):</span>
-                    <span className="font-mono text-[#b48c26] dark:text-[#e5c158] font-bold">₹ {pdliResults.estimatedExitRepaymentCr.toFixed(2)} Cr (1.5x)</span>
+                    <span className="font-mono text-emerald-700 dark:text-emerald-400 font-bold">₹ {pdliResults.estimatedExitRepaymentCr.toFixed(2)} Cr (1.5x)</span>
                   </div>
                 </div>
               </div>
@@ -445,7 +445,7 @@ export const FiscalCalculator: React.FC = () => {
               <div className="space-y-4">
                 <div className="p-4 bg-slate-50 dark:bg-[#08120d] rounded-xl border border-slate-200 dark:border-emerald-950">
                   <div className="text-xs text-slate-500 dark:text-slate-400 mb-1">5-Year Deployment Reimbursement (9%)</div>
-                  <div className="text-3xl font-extrabold text-[#b48c26] dark:text-[#e5c158] font-mono tabular-nums">
+                  <div className="text-3xl font-extrabold text-black dark:text-white font-mono tabular-nums">
                     ₹ {deploymentResults.eligibleReimbursementCr.toFixed(2)} Crore
                   </div>
                   <div className="text-xs text-emerald-700 dark:text-emerald-400/90 mt-1 font-medium">
@@ -483,33 +483,33 @@ export const FiscalCalculator: React.FC = () => {
             {/* Mode C Results */}
             {calcMode === 'RD_TALENT' && (
               <div className="space-y-4">
-                <div className="p-4 bg-[#08120d] rounded-xl border border-emerald-950">
-                  <div className="text-xs text-slate-400 mb-1">Total Grant Support (75% Cap)</div>
-                  <div className="text-3xl font-extrabold text-sky-400 font-mono tabular-nums">
+                <div className="p-4 bg-slate-50 dark:bg-[#08120d] rounded-xl border border-slate-200 dark:border-emerald-950">
+                  <div className="text-xs text-slate-500 dark:text-slate-400 mb-1">Total Grant Support (75% Cap)</div>
+                  <div className="text-3xl font-extrabold text-black dark:text-white font-mono tabular-nums">
                     ₹ {rdResults.totalGrantCr.toFixed(2)} Crore
                   </div>
-                  <div className="text-xs text-slate-400 mt-1">
+                  <div className="text-xs text-emerald-700 dark:text-emerald-400 mt-1 font-medium">
                     On total project cost of ₹{rdResults.totalCost} Cr (Capex: ₹{capexCr} Cr, Opex: ₹{opexCr} Cr)
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3 text-xs">
-                  <div className="p-3 bg-[#08120d] rounded-lg border border-emerald-950">
-                    <span className="text-slate-400 block mb-1">Central Share ({75 - stateIncentivePercentage}%)</span>
-                    <span className="text-base font-bold font-mono text-white">₹ {rdResults.centralGrantCr.toFixed(2)} Cr</span>
-                    <span className="text-[10px] text-emerald-400 block mt-0.5">Nodal Agency / ISM</span>
+                  <div className="p-3 bg-slate-50 dark:bg-[#08120d] rounded-lg border border-slate-200 dark:border-emerald-950">
+                    <span className="text-slate-500 dark:text-slate-400 block mb-1">Central Share ({75 - stateIncentivePercentage}%)</span>
+                    <span className="text-base font-bold font-mono text-slate-900 dark:text-white">₹ {rdResults.centralGrantCr.toFixed(2)} Cr</span>
+                    <span className="text-[10px] text-emerald-700 dark:text-emerald-400 block mt-0.5 font-semibold">Nodal Agency / ISM</span>
                   </div>
-                  <div className="p-3 bg-[#08120d] rounded-lg border border-emerald-950">
-                    <span className="text-slate-400 block mb-1">State Share ({stateIncentivePercentage}%)</span>
-                    <span className="text-base font-bold font-mono text-white">₹ {rdResults.stateGrantCr.toFixed(2)} Cr</span>
-                    <span className="text-[10px] text-sky-400 block mt-0.5">State Electronics Policy</span>
+                  <div className="p-3 bg-slate-50 dark:bg-[#08120d] rounded-lg border border-slate-200 dark:border-emerald-950">
+                    <span className="text-slate-500 dark:text-slate-400 block mb-1">State Share ({stateIncentivePercentage}%)</span>
+                    <span className="text-base font-bold font-mono text-slate-900 dark:text-white">₹ {rdResults.stateGrantCr.toFixed(2)} Cr</span>
+                    <span className="text-[10px] text-emerald-700 dark:text-emerald-400 block mt-0.5 font-semibold">State Electronics Policy</span>
                   </div>
                 </div>
 
-                <div className="p-3 bg-[#08120d] rounded-lg border border-emerald-950 text-xs">
-                  <div className="flex justify-between text-slate-300">
+                <div className="p-3 bg-slate-50 dark:bg-[#08120d] rounded-lg border border-slate-200 dark:border-emerald-950 text-xs">
+                  <div className="flex justify-between text-slate-700 dark:text-slate-300">
                     <span>Company / University Equity Share (25%):</span>
-                    <span className="font-mono font-bold text-white">₹ {rdResults.companyContributionCr.toFixed(2)} Cr</span>
+                    <span className="font-mono font-bold text-slate-900 dark:text-white">₹ {rdResults.companyContributionCr.toFixed(2)} Cr</span>
                   </div>
                 </div>
               </div>

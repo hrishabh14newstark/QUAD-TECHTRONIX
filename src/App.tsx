@@ -39,7 +39,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8faf9] dark:bg-[#050807] text-slate-900 dark:text-slate-100 flex flex-col font-sans selection:bg-emerald-600 selection:text-white transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-[#030604] text-black dark:text-white flex flex-col font-sans selection:bg-emerald-600 selection:text-white transition-colors duration-200">
       {/* Top Navigation */}
       <Navbar
         onOpenProposal={() => setProposalModalOpen(true)}
