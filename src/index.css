@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f8faf9;
+    color: #0f172a;
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .dark body, html.dark body {
+    background-color: #050807;
+    color: #e2e8f0;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Silicon Grid Background */
+.silicon-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(5, 150, 105, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(5, 150, 105, 0.06) 1px, transparent 1px);
+}
+
+.dark .silicon-grid, html.dark .silicon-grid {
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.04) 1px, transparent 1px);
+}
+
+.silicon-dots {
+  background-image: radial-gradient(rgba(229, 193, 88, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom glass styling */
+.glass-panel {
+  background: rgba(10, 16, 13, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.12);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(229, 193, 88, 0.35);
+  background: rgba(14, 22, 18, 0.85);
+}
+
+/* Circuit trace animation */
+@keyframes tracePulse {
+  0% { stroke-dashoffset: 100; opacity: 0.2; }
+  50% { opacity: 0.9; }
+  100% { stroke-dashoffset: 0; opacity: 0.2; }
+}
+
+.animate-trace {
+  stroke-dasharray: 20, 10;
+  animation: tracePulse 4s linear infinite;
+}
